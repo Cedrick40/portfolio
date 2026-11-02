@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of a junior backend developer: skills, projects, education and contact.">
+  <title>Cedrick Niyibikora | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#home">CN<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hello">Hi, I'm</p>
+          <h1>Cedrick Niyibikora</h1>
+          <p class="role">Backend Developer in training, building with Python and Django.</p>
+          <p class="lead">I build reliable, well-structured web services and clean, responsive interfaces.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View my projects</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="avatar" aria-hidden="true"><span>YN</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About me</h2>
+        <p>I'm a developer who enjoys turning ideas into working software. I focus on backend development with Python and Django, and I'm learning to pair it with solid HTML, CSS and JavaScript on the front end.</p>
+        <p>Right now I'm completing a backend development internship, where I build APIs and background-processing services. I like clear code, good documentation and learning in public.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid skills">
+          <article class="card">
+            <h3>Frontend</h3>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li></ul>
+          </article>
+          <article class="card">
+            <h3>Backend</h3>
+            <ul class="tags"><li>Python</li><li>Django</li><li>REST APIs</li><li>Swagger / OpenAPI</li></ul>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid projects">
+          <article class="card project">
+            <div class="thumb t1" aria-hidden="true"></div>
+            <h3>Notification &amp; Job Processing Service</h3>
+            <p>A backend service that queues and processes notification jobs through a documented API.</p>
+            <ul class="tags"><li>Python</li><li>Django</li><li>API</li></ul>
+            <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+          <article class="card project">
+            <div class="thumb t2" aria-hidden="true"></div>
+            <h3>Responsive Portfolio Website</h3>
+            <p>This site: semantic HTML, a Flexbox and Grid layout, and a mobile-friendly menu.</p>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+            <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+          <article class="card project">
+            <div class="thumb t3" aria-hidden="true"></div>
+            <h3>CampusHelp-Ai</h3>
+            <p>A chatbot that helps students find information about their campus and academic resources.</p>
+            <ul class="tags"><li>Python</li><li>Machine Learning</li></ul>
+            <a class="link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container narrow">
+        <h2>Education &amp; experience</h2>
+        <ol class="timeline">
+          <li>
+            <time>2026</time>
+            <h3>Backend Development Intern, Arrowstack</h3>
+            <p>One-month internship building APIs and background job services with Python and Django.</p>
+          </li>
+          <li>
+            <time>2023 – 2027</time>
+            <h3>Computer Science, Lusaka Goldsmiths University</h3>
+            <p>Studied computer science with a focus on Backend Development.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>Have a question or an opportunity? Send a message and I'll reply soon.</p>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <small class="error" id="nameError" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error" id="emailError" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" id="messageError" role="alert"></small>
+          </div>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Cedrick Niyibikora. Built with HTML, CSS and JavaScript.</p>
+    <p><a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="mailto:you@example.com">Email</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
